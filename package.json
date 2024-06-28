@@ -4,11 +4,14 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "server": "NODE_PATH=dist NODE_ENV=production TZ=Asia/Shanghai node dist/server.js"
+    "server": "cross-env HOST=8888 NODE_ENV=production TZ=Asia/Shanghai node server.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/runingkai/github_action_test.git"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
 }
