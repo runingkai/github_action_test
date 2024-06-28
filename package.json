@@ -1,0 +1,14 @@
+{
+  "name": "github_action_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "NODE_PATH=dist NODE_ENV=production TZ=Asia/Shanghai node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runingkai/github_action_test.git"
+  },
+  "private": true
+}
