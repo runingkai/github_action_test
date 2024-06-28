@@ -1,0 +1,19 @@
+name: test-ci-cd
+run-name: 测试CI/CD流程
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  RUN-CI-CD:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install -g bats
+      - run: bats -v
