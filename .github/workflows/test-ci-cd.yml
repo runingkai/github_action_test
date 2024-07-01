@@ -6,7 +6,7 @@ on:
       - dev
 jobs:
   RUN-CI-CD:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       - run: echo Hello world!
