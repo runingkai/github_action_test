@@ -9,13 +9,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo Hello world!
-#      - uses: actions/checkout@v4
-#        with:
-#          ref: dev
-#      - uses: actions/setup-node@v4
-#        with:
-#          node-version: '20'
-#
-#      - run: npm install
-#      - run: npm run server
+      - uses: actions/checkout@v4
+        with:
+          ref: dev
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install
+      - run: npm run server
